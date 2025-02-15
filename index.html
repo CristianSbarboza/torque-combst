@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- links css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/response.css">
+
+
+    <!-- link js -->
+    <script src="js/functionApp.js" defer></script>
+    <script src="js/calculoCombustivel.js" defer></script>
+    <script src="js/convesaoTorque.js" defer></script>
+     
+
+
+</head>
+<body>
+    <div id="container-main">
+        <header>
+            <h1>
+                🚁Bem vindo Mec🫡
+            </h1>
+        </header>
+        
+        <main>
+
+            <section id="container-function">
+                <label for="function">Oque você quer calcular?</label>
+                <select name="function" id="function" >
+                    <option value="combustivel">Calcular combustivel L/KG</option>
+                    <option value="torque">Calcular torque</option>
+                </select>
+            </section>
+
+            <section class="container" id="container-combustivel">
+                <form id="form-combustivel">
+                    <div>
+                        <label for="remanecente">Digite o remanecente:</label>
+                        <input id="remanecente" type="number" required placeholder="Remanecente">
+                    </div>
+                    <div>
+                        <label for="quilos">Quantidade em quilos</label>
+                        <input id="quilos" type="number" required placeholder="Cordenação passou...">
+                    </div>
+                    <input id="btn-calcular" type="submit" value="Calcular">
+                </form>
+                
+            </section>
+
+            <section class="container display-active" id="container-torque">
+                <form id="form-torque">
+                    <div id="container-unidadde-medida">
+                        <label for="unidadde-meedida">Qual você quer converter?</label>
+                        <select name="unidade-medida" id="unidade-medida">
+                            <option value="lbft-nm">Libra-pé => Newton metro</option>
+                            <option value="nm-lbft">Newton metro => Libra-pé</option>
+                            <option value="lbin-nm">Libra-polegada => Newton metro</option>
+                        </select>
+                    </div>
+                    <div id="container-valor-torque">
+                        <label for="valor-torque">Valor do torque</label>
+                        <input type="number" id="valor-torque" required placeholder="valor torque do manual">
+                    </div>
+                    <div>
+                        <input class="btn-calcular" type="submit" value="Calcular">
+                    </div>
+                </form>
+                
+            </section>
+        </main>
+    </div>
+</body>
+</html>
