@@ -1,4 +1,6 @@
-
+body{
+    background-color: #ebe7e7;
+}
 #container-main{
     display: flex;
     flex-direction: column;
@@ -37,6 +39,7 @@ select, input{
     padding: 5px;
 
     border-radius: 5px;
+    
 }
 
 .container{
