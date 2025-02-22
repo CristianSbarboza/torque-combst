@@ -7,18 +7,8 @@ formCombustivel.addEventListener("submit", (e) => {
         
     const remanecente = parseFloat(document.querySelector("#remanecente").value);
     const quilos = parseFloat(document.querySelector("#quilos").value);
-    const unidadeFuel = document.querySelector('#unidade-fuel').value
 
-
-    if(unidadeFuel === 'kg-l'){
-        calculoLitros = (quilos - remanecente) / 0.8;
-
-    }
-
-    if(unidadeFuel === 'lb-l'){
-        calculoLitros = ((quilos * 0.4536) - remanecente) / 0.8;
-    }
-
+    calculoLitros = (quilos - remanecente) / 0.8;
         
     const resultadoAnterior = document.querySelector("#result-combustivel");
     if (resultadoAnterior) {
